@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+  font-family: "Epilogue", sans-serif;
+}
+
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  background: var(--almost-white);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+header nav {
+  display: flex;
+}
+
+header nav .logo {
+  display: block;
+  width: max-content;
+  height: max-content;
+}
+
+header nav .nav-links {
+  display: flex;
+  align-items: flex-start;
+  list-style: none;
+  gap: 2rem;
+  margin-left: 10rem;
+}
+
+header nav .nav-links .nav-link {
+  color: var(--medium-gray);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+header nav .nav-links .nav-link:hover {
+  color: var(--almost-black);
+}
+
+header nav .nav-links .nav-link img {
+  filter: invert(43%) sepia(7%) saturate(4%) hue-rotate(314deg) brightness(92%)
+    contrast(90%);
+  transition: 0.2s ease;
+}
+
+header nav .nav-links .nav-link:hover img {
+  filter: invert(3%) sepia(21%) saturate(30%) hue-rotate(314deg) brightness(96%)
+    contrast(91%);
+}
+
+header nav .nav-links .nav-link.active img {
+  transform: rotateX(180deg);
+}
+
+header .buttons {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+header .buttons .login-button {
+  background: transparent;
+  border: 0;
+  color: var(--medium-gray);
+  transition: 0.2s ease;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+header .buttons .login-button:hover {
+  color: var(--almost-black);
+}
+
+header .buttons .register-button {
+  border: 2px solid var(--medium-gray);
+  transition: 0.2s ease;
+  color: var(--medium-gray);
+  background: transparent;
+  cursor: pointer;
+  padding: 1.25rem 2rem;
+  border-radius: 1.4rem;
+  font-size: 1.6rem;
+}
+
+header .buttons .register-button:hover {
+  color: var(--almost-black);
+  border-color: var(--almost-black);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  padding: 0 15rem;
+}
+
+main .left {
+  display: flex;
+  width: 70rem;
+  flex-direction: column;
+}
+
+main .left .top .title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: var(--almost-black);
+  margin-bottom: 4rem;
+}
+
+main .left .top .description {
+  font-size: 2rem;
+  color: var(--medium-gray);
+  margin-bottom: 4rem;
+  max-width: 71%;
+}
+
+main .left .top .learn-more {
+  color: var(--almost-white);
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: var(--almost-black);
+  border: 2px solid var(--almost-black);
+  padding: 2rem 4rem;
+  border-radius: 1.4rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+main .left .top .learn-more:hover {
+  color: var(--almost-black);
+  background: var(--almost-white);
+}
+
+main .left .bottom {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 5rem;
+}
+
+main .right .hero-image {
+  height: 43.4rem;
+  object-fit: fill;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: end;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
